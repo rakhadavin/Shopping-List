@@ -9,6 +9,8 @@ urlpatterns = [
     path('register/', views.register, name='register'),
     path('login/', views.login_user, name='login'),
     path('logout/', views.logout_user, name='logout'),
+    path('edit-product/<int:id>', views.edit_product, name='edit_product'),
+    path('delete/<int:id>', views.delete_product, name='delete_product'), # sesuaikan dengan nama fungsi yang dibuat
     
     
     path('json/', show_json, name='show_json'), 
